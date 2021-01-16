@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Small Tasks In Timeouts</title>
+  <script type="module">
+  import { getFID } from 'https://unpkg.com/web-vitals?module'
+
+  getFID(console.log)
+  </script>
+</head>
+<body>
+<button onclick="clickButtonHandler(this)">click me quick and get FID in console</button>
+<br>
+<img
+    width="150px"
+    height="150px"
+    src="https://res.cloudinary.com/indysigner/image/fetch/f_auto,q_auto/w_2000/https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/5d80f91c-9807-4565-b616-a4735fcd4949/network-requests-first-input-delay.png"
+>
+<script src="do-a-lot-of-work.js"></script>
+<script>
+addALotOfNodesAsync()
+</script>
+</body>
+</html>
