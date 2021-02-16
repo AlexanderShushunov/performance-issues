@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Content Visibility</title>
+  <style>
+    .box {
+      height: 1500px;
+      font-size: 30px;
+      border: 10px solid salmon;
+    }
+    .pic {
+      content-visibility: auto;
+      width: 500px;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+<div class="box">
+  According the <a href="https://www.industrialempathy.com/posts/image-optimizations/">article</a> 'content-visibility: auto' should save CPU.
+  But I did not notice.
+  <br>
+  Also you can try 'decoding="async"' and 'loading="lazy"'. Add this attrs and measure in you project.
+</div>
+<img class="pic"
+     src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Pizigani_1367_Chart_10MB.jpg"
+     width="10315" height="7049"
+     alt="map">
+<div class="box">
+  other box
+</div>
+</body>
+</html>

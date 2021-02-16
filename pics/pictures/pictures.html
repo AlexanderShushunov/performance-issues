@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tag Picture</title>
+  <style>
+    .pic {
+      width: 50%;
+      height: auto;
+    }
+    @media (max-width: 400px) {
+      .pic {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+<picture>
+  <source
+      sizes="(min-width: 400px) 50vw,
+            100vw"
+      srcset="rabbit-1656.avif 1656w,
+              rabbit-828.avif 828w,
+              rabbit-414.avif 414w"
+      type="image/avif"
+  />
+  <source
+      sizes="(min-width: 400px) 50vw,
+            100vw"
+      srcset="rabbit-1656.webp 1656w,
+              rabbit-828.webp 828w,
+              rabbit-414.webp 414w"
+      type="image/webp"
+  />
+  <img
+      sizes="(min-width: 400px) 50vw,
+            100vw"
+      srcset="rabbit-1656.jpg 1656w,
+              rabbit-828.jpg 828w,
+              rabbit-414.jpg 414w"
+      class="pic"
+      src="rabbit-1656.jpg"
+      alt="rabbit"
+      height="2407" width="1656"
+  >
+</picture>
+</body>
+</html>
