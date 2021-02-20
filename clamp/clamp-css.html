@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Clamp</title>
+  <style>
+    .box {
+      width: 300px;
+      margin: 20px;
+      line-height: 20px;
+    }
+
+    .clamp-css {
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+
+<div class="box clamp-css">
+  The -webkit-line-clamp CSS property allows limiting of the contents of a block container to the specified number of
+  lines.
+  It only works in combination with the display property set to -webkit-box or -webkit-inline-box and the
+  -webkit-box-orient property set to vertical.
+  In most cases you will also want to set overflow to hidden, otherwise the contents won't be clipped but an ellipsis
+  will still be shown after the specified number of lines.
+  When applied to anchor elements, the truncating can happen in the middle of the text, not necessarily at the end.
+  Note: This property was originally implemented in WebKit and has some issues. It got standardized for legacy support.
+  The CSS Overflow Module Level 3 specification also defines a line-clamp property, which is meant to replace this
+  property and avoid its issues.
+</div>
+</body>
+</html>
