@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Slider</title>
+  <style>
+    .slider {
+      overflow: hidden;
+      width: 1400px;
+      position: relative;
+    }
+
+    .slider__panel {
+      position: relative;
+      left: 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      transition: left 1s;
+    }
+
+    .slider__buttons {
+      display: flex;
+      justify-content: center;
+    }
+
+    .slider__button {
+      margin: 10px;
+      font-size: 44px;
+    }
+  </style>
+</head>
+<body>
+<div class="slider">
+  <div class="slider__panel">
+    <img src="pic1.png" height="599" width="1364" alt="pic 1"/>
+    <img src="pic2.png" height="599" width="1364" alt="pic 2"/>
+    <img src="pic3.png" height="599" width="1364" alt="pic 3"/>
+    <img src="pic1.png" height="599" width="1364" alt="pic 1"/>
+  </div>
+  <div class="slider__buttons">
+    <button class="slider__button" id="first-page">1</button>
+    <button class="slider__button" id="second-page">2</button>
+    <button class="slider__button" id="third-page">3</button>
+  </div>
+</div>
+
+<script>
+  const slider__panel = document.getElementsByClassName('slider__panel')[0]
+  const firstPageBtn = document.getElementById('first-page')
+  const secondPageBtn = document.getElementById('second-page')
+  const thirdPageBtn = document.getElementById('third-page')
+  const pageWidth = 1364
+  firstPageBtn.addEventListener('click', () => {
+    slider__panel.style.left = '0'
+  })
+  secondPageBtn.addEventListener('click', () => {
+    slider__panel.style.left = `-${pageWidth}px`
+  })
+  thirdPageBtn.addEventListener('click', () => {
+    slider__panel.style.left = `-${pageWidth * 2}px`
+  })
+</script>
+</body>
+</html>
