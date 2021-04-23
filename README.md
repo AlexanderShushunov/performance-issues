@@ -5,6 +5,8 @@
 ## Слайды
 [2021.02.24 EPAM INSIDER Брянск](https://drive.google.com/file/d/1RilBLh4z7l--8NtkCRss7ZlYUaB4sfBU/view?usp=sharing)
 
+[2021.04.23 HolyJS](https://drive.google.com/file/d/1VZTmRdhyhn30OEXYiCV8Rat4I5UmEoKE/view?usp=sharing)
+
 
 ## Полезные ссылки
 
